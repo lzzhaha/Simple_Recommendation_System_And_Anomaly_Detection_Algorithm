@@ -22,13 +22,13 @@ tp = comp' * yval;
 num_real_pos = sum(yval);
 
 %calculate the precision
-if num_pred_pos !=0
+if num_pred_pos ~=0
   prec = tp/(num_pred_pos);
 else
   prec = 0;
 endif
 %calculate the recall
-if num_real_pos !=0
+if num_real_pos ~=0
   rec = tp/(num_real_pos);
 else 
   rec = 0;
